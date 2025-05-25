@@ -8,8 +8,9 @@ body {
   color: rgb(var(--bs-tertiary-color-rgb));
 }
 
+
 /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
+-------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
@@ -26,8 +27,9 @@ body {
   height: 32rem;
 }
 
+
 /* MARKETING CONTENT
-  -------------------------------------------------- */
+-------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
@@ -36,13 +38,14 @@ body {
 }
 /* rtl:begin:ignore */
 .marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
+  margin-right: .75rem;
+  margin-left: .75rem;
 }
 /* rtl:end:ignore */
 
+
 /* Featurettes
-  ------------------------- */
+------------------------- */
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
@@ -51,13 +54,13 @@ body {
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
-  letter-spacing: -0.05rem;
+  letter-spacing: -.05rem;
 }
 
 /* rtl:end:remove */
 
 /* RESPONSIVE CSS
-  -------------------------------------------------- */
+-------------------------------------------------- */
 
 @media (min-width: 40em) {
   /* Bump up size of carousel content */

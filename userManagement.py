@@ -2,11 +2,37 @@ import sqlite3 as sql
 import bcrypt
 
 
-### example
-def getUsers():
+
+def checkAdmin(username, password):
     con = sql.connect("databaseFiles/database.db")
     cur = con.cursor()
-    cur.execute("SELECT * FROM id7-tusers")
-    con.close()
-    return cur
+    cur.execute("SELECT * FROM admin_users WHERE admin_user=?", (username,))
+    user = cur.fetchone() 
+    if user:
+        stored_password = user[2] 
+        if bcrypt.checkpw(password.encode('utf-8'), stored_password.encode('utf-8')):
+            return True
+        else:
+            return False
+    else:
+        return False
+    
 
+def getAdminEmail(username):
+    con = sql.connect("databaseFiles/database.db")
+    cur = con.cursor()
+    cur.execute("SELECT * FROM admin_users WHERE admin_user=?", (username,))
+    user = cur.fetchone() 
+    if user:
+        return user[3] 
+    else:
+        return None
+
+
+def main():
+    password = "P@ssword123"
+    hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+    print(hashed)
+    print(bcrypt.checkpw(password.encode('utf-8'), hashed))
+if __name__ == "__main__":
+    main()

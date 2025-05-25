@@ -1,0 +1,17 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container">
+  <div class="row">
+    <h1>Admin Page</h1>
+    <p>Welcome to the admin page!</p>
+  </div>
+  <div class="row">
+    <h2>Admin Actions</h2>
+    <ul>
+      <li><a href="/admin/manage-users">Change Login Info</a></li>
+      <li><a href="/admin/view-reports">Change testimonials</a></li>
+      <li><a href="/admin/settings">Update banners and images</a></li>
+      <li><a href="/admin/view-logs">View Logs</a></li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
