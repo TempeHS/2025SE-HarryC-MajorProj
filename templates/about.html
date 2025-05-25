@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container my-5">
+  <div class="row align-items-center">
+    <!-- Photo on the left -->
+    <div class="col-md-4 text-center mb-4 mb-md-0">
+      <img
+        src="/static/images/profile_pictures/profile photo.jpg"
+        alt="Profile Photo"
+        class="img-fluid rounded shadow"
+        style="max-width: 250px"
+      />
+    </div>
+    <!-- Biography and credentials on the right -->
+    <div class="col-md-8">
+      <div class="card mb-3 p-3">
+        <h2>Biography</h2>
+        <p>
+          <!-- Add biography text here -->
+          Hanh Hoang Le is a dedicated acupuncturist based in Sydney, with over
+          a decade of clinical experience in traditional Chinese medicine. After
+          earning her Bachelor of Health Science in Traditional Chinese Medicine
+          from the University of Technology Sydney (UTS), Mei deepened her
+          practice through intensive study in China and Japan, where she trained
+          alongside respected practitioners in both urban hospitals and rural
+          clinics. Her integrative approach combines classical acupuncture
+          techniques with modern evidence-based care, offering tailored
+          treatments that focus on holistic wellness. Today, she runs a thriving
+          clinic in Sydney, helping patients restore balance, manage pain, and
+          improve overall vitality.
+        </p>
+      </div>
+      <div class="card p-3">
+        <h2>Credentials</h2>
+        <ul>
+          <li>B.A in Chinese Medicine and Acupuncture</li>
+          <li>Certificate in Chinese Acupuncture Chengdou</li>
+          <li>Chinese Practioners Membership</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

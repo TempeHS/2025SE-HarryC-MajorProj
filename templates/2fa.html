@@ -1,0 +1,47 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="main-background">
+<div class="container text-center">
+<h1 class="display-1 padding">Two Factor Authentication</h1>
+<form action="/2fa.html" method="POST" class="box fade-up-in" style="text-align: center">
+    <div class="card twofa-card fade-up-in">
+    <div class="input__wrapper">
+      <input type="hidden" name="key" value="{{ key }}" />
+      <input type="hidden" name="username" value="{{ devtag }}" />
+      <div class="input_wrapper">
+      </div>
+      <br />
+      <div data-mdb-input-init class="form-outline mb-4">
+        <input
+          type="text"
+          name="otp_code"
+          id="form2Example27"
+          class="form-control twofaCode"
+        />
+        <br />
+          <label class="form-label" for="form2Example27">Enter the 2FA code in spam folder</label>
+          <br />
+        </div>
+      </div>
+      <div class="input__wrapper">
+        <button
+          data-mdb-button-init
+          data-mdb-ripple-init
+          class="btn btn-dark btn-lg btn-block"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+      {% if error %}
+      <div class="alert alert-danger mt-3" role="alert" id="errorMessage">
+        Wrong code!
+      </div>
+      {% endif %}
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    </div>
+  </div>
+  </div>
+  {% endblock %}
+</form>
+</div>
+</div>
