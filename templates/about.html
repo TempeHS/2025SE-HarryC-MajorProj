@@ -1,10 +1,11 @@
 {% extends "layout.html" %} {% block content %}
 <div class="container my-5">
   <div class="row align-items-center">
+    {% for row in data %}
     <!-- Photo on the left -->
     <div class="col-md-4 text-center mb-4 mb-md-0">
       <img
-        src="/static/images/profile_pictures/profile photo.jpg"
+        src="{{ row.image_path }}"
         alt="Profile Photo"
         class="img-fluid rounded shadow"
         style="max-width: 250px"
@@ -14,30 +15,46 @@
     <div class="col-md-8">
       <div class="card mb-3 p-3">
         <h2>Biography</h2>
-        <p>
-          <!-- Add biography text here -->
-          Hanh Hoang Le is a dedicated acupuncturist based in Sydney, with over
-          a decade of clinical experience in traditional Chinese medicine. After
-          earning her Bachelor of Health Science in Traditional Chinese Medicine
-          from the University of Technology Sydney (UTS), Mei deepened her
-          practice through intensive study in China and Japan, where she trained
-          alongside respected practitioners in both urban hospitals and rural
-          clinics. Her integrative approach combines classical acupuncture
-          techniques with modern evidence-based care, offering tailored
-          treatments that focus on holistic wellness. Today, she runs a thriving
-          clinic in Sydney, helping patients restore balance, manage pain, and
-          improve overall vitality.
-        </p>
+        <p>{{ row.biography }}</p>
       </div>
       <div class="card p-3">
         <h2>Credentials</h2>
         <ul>
-          <li>B.A in Chinese Medicine and Acupuncture</li>
-          <li>Certificate in Chinese Acupuncture Chengdou</li>
-          <li>Chinese Practioners Membership</li>
+          {% for cred in row.credentials.split('\n') %}
+          <li>{{ cred }}</li>
+          {% endfor %}
         </ul>
       </div>
     </div>
+    {% endfor %}
+  </div>
+
+  <hr class="featurette-divider" />
+
+  <div class="card p-3">
+    <div class="row align-items-center">
+    <div class="col-md-5">
+    <h2>Contact Information</h2>
+    <p><span class="me-2" style="font-size:1.2em;">📧</span><strong>Email: </strong>contact@Le-Acupuncture.com</p>
+    <p><span class="me-2" style="font-size:1.2em;">📞</span><strong>Phone Number: </strong>0427304968</p>
+    </div>
+
+    <div class="col-md-7">
+    <div class="ratio ratio-16x9">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d206.95030111089474!2d151.1551597353413!3d-33.91012779135607!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b15fc592d74f%3A0xfcd8bc78a05f327c!2sLe%20Acupuncture%20-%20Hanh%20Le!5e0!3m2!1sen!2sau!4v1748941171076!5m2!1sen!2sau"
+        width="100%"
+        height="250"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" 
+      ></iframe>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
   </div>
 </div>
 {% endblock %}

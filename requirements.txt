@@ -3,3 +3,6 @@ bcrypt
 flask_wtf
 flask-csp
 pyotp
+flask_cors
+bleach
+flask_limiter

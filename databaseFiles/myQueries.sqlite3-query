@@ -6,4 +6,7 @@ CREATE TABLE admin_users(id INTEGER PRIMARY KEY autoincrement,admin_user TEXT NO
 
 -- SELECT * FROM extension;
 
-CREATE TABLE 
+-- CREATE TABLE testimonials(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, customer TEXT NOT NULL, testimonial TEXT NOT NULL) --
+
+
+CREATE TABLE about_content(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, biography TEXT NOT NULL, credentials TEXT NOT NULL, image_path TEXT NOT NULL);
