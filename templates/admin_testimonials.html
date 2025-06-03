@@ -1,0 +1,51 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container">
+  <div class="row">
+    <h1 class="display-4">Add Testimonial</h1>
+  </div>
+  <form
+    method="POST"
+    action="/admin_testimonials.html"
+    class="fade-up-in padding-top"
+    enctype="multipart/form-data"
+  >
+    <div class="mb-3">
+      <br />
+      <label for="customer_name" class="form-label">Customer Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="customer_name"
+        name="customer_name"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="customer_testiomonial" class="form-label">Testimonial</label>
+      <input
+        type="text"
+        class="form-control"
+        id="customer_testimonial"
+        name="customer_testimonial"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="formFile" class="form-label">Customer Profile Picture</label>
+      <input class="form-control" type="file" id="formFile" name="formFile" />
+    </div>
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+    <button type="submit" class="btn new-btn-primary">Submit</button>
+    {% if success %}
+    <div class="alert alert-success mt-3" role="alert" id="successMessage">
+      Entry successfully added!
+    </div>
+    {% endif %}
+  </form>
+  <div class="container my5">
+    <h2 class="display-6">Change Testimonials</h2>
+    </br>
+    {% include 'partials/admin_change_testimonials.html' %}
+  </div>
+  {% endblock %}
+</div>

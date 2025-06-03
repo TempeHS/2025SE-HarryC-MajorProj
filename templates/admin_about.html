@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container pt-4">
+    {% for row in data %}
+    <h1> Edit About Me</h1>
+    <form method="POST" action="/admin_about.html" class="fade-up-in padding-top" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="biography" class="form-label">About Me</label>
+            <textarea class="form-control" id="biography" name="biography" rows="5">{{ row.biography }}</textarea>
+        </div>
+        <div class="mb-3">
+            <label for="practitioner_picture" class="form-label">Practitioner Picture</label>
+            <input class="form-control" type="file" id="image_path" name="image_path">
+            <img src="/{{ row.image_path }}" alt="Practioner Profile picture" class="img img-thumbnail mt-2" style="max-height: 20vh;">
+        </div> 
+        <div class="mb-3">
+            <label for="practitioner_credentials" class="form-label">Credentials</label>
+            <textarea class="form-control" id="credentials" name="credentials" rows="5">{{ row.credentials }}</textarea>
+        </div>
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button type="submit" class="btn new-btn-primary">Update</button>
+        {% if success %}
+        <div class="alert alert-success mt-3" role="alert" id="successMessage">
+            About Me successfully updated!
+        </div>
+        {% endif %}
+        {% endfor %}
+</div>
+{% endblock %}

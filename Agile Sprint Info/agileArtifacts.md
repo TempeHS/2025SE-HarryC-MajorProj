@@ -6,12 +6,9 @@
 
 ---
 
-- Ability for Admin to login
-- Authentication (2FA) and session management
-- Home page with short video or text, and buttons to go to different pages
-- Blog page Instagram API integration
-- Booking page with Cliniko integration and deals (Make exception for the iframe), testiomonials
-- About me page
+- Allow Admin to change about me page (images and texts)
+- Allow Admin to create and delete customer testimonials
+- Allow Admin to change password using 2FA
 
 # Sprint Review (focus on project management)
 
@@ -19,21 +16,17 @@
 
 ## What challenges did you have
 
-- Getting the Instagram API integration (Still in progress)
-- Configuring the Bootstrap Template for the home page
-- Implementing the 2FA through smtp mail
-- Making a responsive banner
-- Managing the CSP for inline scripts
+- Recieving user files + storing file paths in the database
+- Utilising both get and post requests on the change password page
+- Rendering the about me text within the forms to be changed
 
 ## What did you do well
 
-- Time management
-- Reusing code from previous projects
-- Cliniko integration
-- Creating the functions for 2FA
-- Not spending too much time on a particular issue and moving on and revisitingg later
+- Not relying from Co-pilot inline suggestions
+- Reusing logic from previous projects
+- Abstraction in certain areas for the about me and testimonail
 
 ## What will you do differently next time
 
-- Read the Meta Graph API more comprehensively
-- Find better videos to explain the smtp method for authentication
+- Seek help from more reliable sources
+- Refer to bootstrap docs and extract from snippets

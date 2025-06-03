@@ -16,7 +16,16 @@ def checkAdmin(username, password):
             return False
     else:
         return False
-    
+
+def changePassword(username, new_password):
+    con = sql.connect("databaseFiles/database.db")
+    cur = con.cursor()
+    hashed = bcrypt.hashpw(new_password.encode('utf-8'), bcrypt.gensalt())
+    cur.execute("UPDATE admin_users SET password=? WHERE admin_user=?", (hashed, username))
+    con.commit()
+    con.close()
+
+
 
 def getAdminEmail(username):
     con = sql.connect("databaseFiles/database.db")

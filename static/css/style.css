@@ -2,10 +2,10 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html,
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   color: rgb(var(--bs-tertiary-color-rgb));
+  font-family: "Fira Code", monospace;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -76,4 +76,39 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+
+.montserrat-<uniquifier > {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* MY CUSTOM STYLES
+  -------------------------------------------------- */
+
+:root {
+  --color-bg: #f7f7f7;
+  --color-text: #212529;
+  --color-primary: #303c2c;
+  --color-secondary-text: #f7f7f7;
+}
+
+.main-background {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #303c2c !important;
+  border-color: #303c2c !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--color-secondary-text);
 }

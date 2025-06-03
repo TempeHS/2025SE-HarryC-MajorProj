@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    {% for row in data %}
+    <div class="col-md-4 mb-4 d-flex align-items-stretch">
+      <div class="card w-100 h-100 d-flex flex-row align-items-center p-3">
+        <img
+          src="{{ row.formFile }}"
+          alt="Profile"
+          class="rounded-circle me-3"
+          width="48"
+          height="48"
+        />
+        <div>
+          <strong>{{ row.customer_name }}</strong>
+          <p class="mb-0">{{ row.customer_testimonial }}.</p>
+        </div>
+      </div>
+    </div>
+    {% if loop.index % 3 == 0 and not loop.last %}
+  </div>
+  <div class="row">{% endif %} {% endfor %}</div>
+</div>
