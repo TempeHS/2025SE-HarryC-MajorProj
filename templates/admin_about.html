@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "admin_layout.html" %}
 {% block content %}
 <div class="container pt-4">
     {% for row in data %}
@@ -18,7 +18,7 @@
             <textarea class="form-control" id="credentials" name="credentials" rows="5">{{ row.credentials }}</textarea>
         </div>
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        <button type="submit" class="btn new-btn-primary">Update</button>
+        <button type="submit" class="btn btn-secondary">Update</button>
         {% if success %}
         <div class="alert alert-success mt-3" role="alert" id="successMessage">
             About Me successfully updated!

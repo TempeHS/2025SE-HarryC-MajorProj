@@ -66,6 +66,27 @@ def get_aboutme():
         return {"error": "Unauthorized"}, 401
     
 
+@api.route("/post_blog", methods=["POST"])
+@limiter.limit("1/second", override_defaults=False)
+def post_blog():
+    if request.headers.get("Authorization") == auth_key:
+        data = request.get_json()
+        response = admin.post_blog(data)
+        print(response)
+        return response, 200
+    else:
+        return {"error": "Unauthorized"}, 401
+
+@api.route("/get_blog", methods=["GET"])
+@limiter.limit("1/second", override_defaults=False)
+def get_blog():
+    if request.headers.get("Authorization") == auth_key:
+        blog = admin.get_blogs()
+        return blog, 200
+    else:
+        return {"error": "Unauthorized"}, 401
+
+
 @api.route("/update_aboutme", methods=["POST"])
 @limiter.limit("1/second", override_defaults=False)
 def change_aboutme():

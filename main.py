@@ -12,6 +12,9 @@ import userManagement as dbHandler
 import twofa
 import testimonials as test
 import admin 
+from flask import send_file
+from datetime import timedelta
+import methods as method
 
 # Code snippet for logging a message
 # app.logger.critical("message")
@@ -32,6 +35,33 @@ csrf = CSRFProtect(app)
 
 app_header = {"Authorization": "4L50v92nOgcDCYUM"}
 
+# Set session lifetime to 24 hours
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=1440)
+
+# Checks if the user is logged in, particularly when trying to access a page which requires authentication
+# Redirects to the login page if not authenticated
+@app.before_request
+def require_login():
+    public_routes = [
+        '/', '/admin_login.html', '/static', '/about.html', '/booking.html', '/privacy.html', '/blog.html', '/index.html'
+    ]
+    if request.path.startswith('/static'):
+        return
+    if request.path in public_routes:
+        return
+    if session.get('username') is None:
+        session.clear()
+        return redirect("/index.html", 302)
+
+@app.after_request
+def add_header(response):
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "0"
+    return response
+
+
+
 # Redirect index.html to domain root for consistent UX
 @app.route("/index", methods=["GET"])
 @app.route("/index.htm", methods=["GET"])
@@ -45,7 +75,21 @@ def root():
 @app.route("/", methods=["POST", "GET"])
 @csp_header(
     {
-        # Server Side CSP is consistent with meta CSP in layout.html
+        "base-uri": "'self'",
+        "default-src": "'self'",
+        "style-src": "'self' 'unsafe-inline' www.instagram.com",
+        "script-src": "'self' www.instagram.com https://cdn.tiny.cloud",
+        "img-src": "'self' data: cdninstagram.com",
+        "media-src": "'self'",
+        "font-src": "'self'",
+        "object-src": "'self'",
+        "child-src": "'self'",
+        "connect-src": "'self'",
+        "worker-src": "'self'",
+        "report-uri": "/csp_report",
+        "frame-ancestors": "'none'",
+        "form-action": "'self'",
+        "frame-src": "'self' www.instagram.com le-acupuncture.au2.cliniko.com www.google.com https://cdn.tiny.cloud",
     }
 )
 def index():
@@ -77,53 +121,20 @@ def admin_login():
 def admin_page():
     return render_template("/admin.html")
 
-# Methods for getting and changing testimonials
-def get_testimonials():
-    url = "http://127.0.1:3000/get_testimonials"
-    data = []
-    try:
-        response = requests.get(url, headers=app_header)
-        response.raise_for_status()
-        data = response.json()
-    except requests.exceptions.RequestException as e:
-        app.logger.critical(f"Failed to fetch testimonials: {e}")
-        data = {"error": "Failed to fetch testimonials"}
-    return data
-
-def add_testimonial(data):
-    post_url = "http://127.0.1:3000/add_testimonial"
-    try:
-        response = requests.post(post_url, json=data, headers=app_header)
-        response.raise_for_status()
-        return True
-    except requests.exceptions.RequestException as e:
-        app.logger.critical(f"Failed to add testimonial: {e}")
-        return False
-
-def delete_testimonial(testimonial_id):
-    delete_url = f"http://127.0.1:3000/delete_testimonial/{testimonial_id}"
-    try:
-        response = requests.post(delete_url, headers=app_header)
-        response.raise_for_status()
-        return True
-    except requests.exceptions.RequestException as e:
-        app.logger.critical(f"Failed to delete testimonial: {e}")
-        return False
-
 @app.route("/admin_testimonials.html", methods=["GET", "POST"])
 def add_testiominals():
     if request.method == "POST":
         delete_id = request.form.get("id")
         if delete_id:
-            delete = delete_testimonial(delete_id)
-            data = get_testimonials()
+            delete = method.delete_testimonial(delete_id)
+            data = method.get_testimonials()
             return render_template("admin_testimonials.html", data=data, delete=delete)
         else:
             form_data = test.sanitize_testimonial(request.form)
-            success = add_testimonial(form_data)
-            data = get_testimonials()
+            success = method.add_testimonial(form_data)
+            data = method.get_testimonials()
             return render_template("admin_testimonials.html", data=data, success=success)
-    data = get_testimonials() # Explain why here you have to call the api again and again
+    data = method.get_testimonials() # Explain why here you have to call the api again and again
     return render_template("admin_testimonials.html", data=data)
 
 @app.route("/2fa.html", methods=["POST"])
@@ -142,41 +153,28 @@ def twofa_page():
 
 @app.route("/booking.html", methods=["GET"])
 def booking():
-    data = get_testimonials()
+    data = method.get_testimonials()
     return render_template("/booking.html", data=data)
 
-
-def get_aboutme():
-    url = "http://127.0.0.1:3000/get_aboutme"
-    data = []
-    try:
-        response = requests.get(url, headers=app_header)
-        response.raise_for_status()
-        data = response.json()
-    except requests.exceptions.RequestException as e:
-        app.logger.critical(f"Failed to fetch testimonials: {e}")
-        data = {"error": "Failed to get about me data"}
-    return data
-
-def update_aboutme(data):
-    url = "http://127.0.0.1:3000/update_aboutme"
-    try:
-        response = requests.post(url,json=data, headers=app_header)
-        response.raise_for_status()
-        return True
-    except requests.exceptions.RequestException as e:
-        app.logger.critical(f"Failed to change about me: {e}")
-        return False
+@app.route("/admin_blog.html", methods=["GET", "POST"])
+def admin_blog():
+    if request.method == "POST":
+        blog_data = admin.sanatize_blog(request)
+        print(blog_data)
+        success = method.post_blog(blog_data)
+        return render_template("/admin_blog.html", success=success)
+    else:
+        return render_template("/admin_blog.html")
 
 @app.route("/admin_about.html", methods=["GET", "POST"])
 def admin_about():
     if request.method == "POST":
         form_data = admin.sanatize_aboutme(request)
         print(form_data)
-        success = update_aboutme(form_data)
-        data = get_aboutme()
+        success = method.update_aboutme(form_data)
+        data = method.get_aboutme()
         return render_template("/admin_about.html", success=success, data=data)
-    data = get_aboutme()
+    data = method.get_aboutme()
     return render_template("/admin_about.html", data=data)
 
 @app.route("/admin_change_password.html", methods=["GET", "POST"])
@@ -197,10 +195,14 @@ def admin_change_password():
         new_password = request.form["new_password"]
         if twofa.verify_otp(input_code, otp_code) and dbHandler.checkAdmin(username, current_password):
             print("Passed verification check")
-            dbHandler.changePassword(username, new_password)
-            return render_template("/admin_change_password.html", success=True)
+            errors = dbHandler.validate_password(new_password)
+            if not errors or not any(errors.values()):
+                dbHandler.changePassword(username, new_password)
+                return render_template("/admin_change_password.html", success=True, errors=None)
+            else:
+                return render_template("/admin_change_password.html", errors=errors)
         else:
-            return render_template("/admin_change_password.html", error="Invalid 2FA code or current password")
+            return render_template("/admin_change_password.html", error="Invalid 2FA code or current password", errors=None)
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
@@ -209,12 +211,26 @@ def privacy():
 @app.route("/about.html", methods=["GET"])
 def about():
     data = {}
-    data = get_aboutme()
+    data = method.get_aboutme()
     return render_template("/about.html", data=data)
 
 @app.route("/blog.html", methods=["GET"])
 def blog():
-    return render_template("/blog.html")
+    data = {}
+    data = method.get_blog()
+    return render_template("/blog.html", data=data)
+
+@app.route("/download_logs", methods=["GET"])
+def download_logs():
+    return send_file("security_log.log", as_attachment=True)
+
+@app.route("/logout", methods=["POST", "GET"])
+def logout():
+    username = session.pop('username', None)
+    if username:
+        app_log.info("User '%s' logged out successfully", username)
+    session.clear()
+    return redirect("admin_login.html")
 
 # Endpoint for logging CSP violations
 @app.route("/csp_report", methods=["POST"])
@@ -222,7 +238,6 @@ def blog():
 def csp_report():
     app.logger.critical(request.data.decode())
     return "done"
-
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)

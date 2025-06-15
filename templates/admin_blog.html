@@ -1,0 +1,38 @@
+{% extends 'admin_layout.html' %} {% block content %}
+  <div class="container">
+    <div class="row">
+      <h1 class="display-4">Add Blog Post</h1>
+    </div>
+    <form method="POST" action="/admin_blog.html" class="fade-up-in padding-top">
+      <div class="mb-3">
+        <br />
+        <label for="project" class="form-label">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          name="title"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="blog_content" class="form-label">Blog Content</label>
+        <textarea
+          class="form-control"
+          id="blog_content"
+          name="blog_content"
+          rows="10"
+          required
+        ></textarea>
+      </div>
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+      <button type="submit" class="btn btn-secondary">Submit</button>
+      {% if success %}
+      <div class="alert alert-success mt-3" role="alert" id="successMessage">
+        Blog Post successfully added!
+      </div>
+      {% endif %}
+    </form>
+  </div>
+  {% endblock %}
+</div>
