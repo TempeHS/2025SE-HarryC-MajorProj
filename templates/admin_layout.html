@@ -3,35 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="
-      base-uri 'self';
-      default-src 'self';
-      style-src 'self' cdnjs.cloudflare.com 'unsafe-inline' www.instagram.com;
-      script-src 'self' www.instagram.com;
-      img-src 'self' data: cdninstagram.com;
-      media-src 'self';
-      font-src 'self';
-      connect-src 'self';
-      object-src 'self';
-      worker-src 'self';
-      frame-src 'self' www.instagram.com le-acupuncture.au2.cliniko.com www.google.com https://cdn.tiny.cloud;
-      form-action 'self';
-      manifest-src 'self'
-    "
-    />
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
     <title>Le Acupuncture</title>
     <link rel="manifest" href="static/manifest.json" />
     <link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
     <meta name="theme-color" content="" />
     <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+    <script
+      src="https://cdn.tiny.cloud/1/xyhchfcqhn1tvql5881pyrmao8h4v6l9nvomt4niffza551k/tinymce/7/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
   </head>
   <body>
     <div class="main-background">
-      {% include "partials/menu.html" %} {% block content %}{% endblock %} {%
-      include "partials/footer.html" %}
+      {% include "partials/admin_menu.html" %} {% block content %}{% endblock %}
+      {%include "partials/footer.html" %}
       <script src="static/js/bootstrap.bundle.min.js"></script>
       <script src="static/js/serviceWorker.js"></script>
       <script src="static/js/app.js"></script>

@@ -1,7 +1,7 @@
-{% extends 'layout.html' %} {% block content %}
+{% extends 'auth_layout.html' %} {% block content %}
 <div class="main-background">
 <div class="container text-center">
-<h1 class="display-1 padding">Two Factor Authentication</h1>
+<h2 class="display-1 padding">Two Factor Authentication</h2>
 <form action="/2fa.html" method="POST" class="box fade-up-in" style="text-align: center">
     <div class="card twofa-card fade-up-in">
     <div class="input__wrapper">
@@ -14,11 +14,12 @@
         <input
           type="text"
           name="otp_code"
+          style="text-align: center;"
           id="form2Example27"
           class="form-control twofaCode"
         />
         <br />
-          <label class="form-label" for="form2Example27">Enter the 2FA code in spam folder</label>
+          <label class="form-label" for="form2Example27">Enter the 2FA code from email, check spam</label>
           <br />
         </div>
       </div>

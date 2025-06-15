@@ -1,17 +1,48 @@
-{% extends 'layout.html' %} {% block content %}
+{% extends 'admin_layout.html' %} {% block content %}
 <div class="container">
   <div class="row">
     <h1>Admin Page</h1>
     <p>Welcome to the admin page!</p>
   </div>
   <div class="row">
-    <h2>Admin Actions</h2>
-    <ul>
-      <li><a href="admin_change_password.html">Change Login Info</a></li>
-      <li><a href="admin_testimonials.html">Change testimonials</a></li>
-      <li><a href="/admin_about.html">Update About Me</a></li>
-      <li><a href="/admin/view-logs">View Logs</a></li>
-    </ul>
+    <div class="container text-center">
+      <div class="row row-cols-2">
+        <div class="col">
+          <p>
+            <a
+              class="btn btn-secondary admin-action-btn"
+              href="admin_change_password.html"
+              >Change Login details</a
+            >
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <a
+              class="btn btn-secondary admin-action-btn"
+              href="admin_testimonials.html"
+              >Change Testimonials</a
+            >
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <a
+              class="btn btn-secondary admin-action-btn"
+              href="admin_about.html"
+              >Change About Me</a
+            >
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <a class="btn btn-secondary admin-action-btn" href="/admin_blog.html"
+              >Make a new blog</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+  {% endblock %}
 </div>
-{% endblock %}

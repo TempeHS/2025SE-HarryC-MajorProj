@@ -1,4 +1,4 @@
-{% extends "layout.html" %} {% block content %}
+{% extends "admin_layout.html" %} {% block content %}
 <div class="container">
   <div class="row">
     <h1 class="display-4">Add Testimonial</h1>
@@ -35,7 +35,7 @@
       <input class="form-control" type="file" id="formFile" name="formFile" />
     </div>
     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-    <button type="submit" class="btn new-btn-primary">Submit</button>
+    <button type="submit" class="btn btn-secondary">Submit</button>
     {% if success %}
     <div class="alert alert-success mt-3" role="alert" id="successMessage">
       Entry successfully added!
@@ -43,7 +43,6 @@
     {% endif %}
   </form>
   <div class="container my5">
-    <h2 class="display-6">Change Testimonials</h2>
     </br>
     {% include 'partials/admin_change_testimonials.html' %}
   </div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    {% set reversed_data = data|reverse|list %} {% for row in reversed_data[:3]
+    %}
+    <div class="col-12 mb-4 d-flex align-items-stretch">
+      <div class="card p-3 w-100">
+        <div class="d-flex align-items-center mb-3">
+          <img
+            src="{{ row.image_path }}"
+            alt="Admin Photo"
+            class="rounded-circle me-3"
+            width="48"
+            height="48"
+            style="object-fit: cover"
+          />
+          <div>
+            <h4 class="mb-0">{{ row.title }}</h4>
+            <small class="text-muted">{{ row.created_at }}</small>
+          </div>
+        </div>
+        <div>
+          <p class="mb-0">
+            {{ row.blog_content|replace('\n', '<br />')|safe }}
+          </p>
+        </div>
+      </div>
+    </div>
+    {% if loop.index % 2 == 0 and not loop.last %}
+  </div>
+  <div class="row">{% endif %} {% endfor %}</div>
+</div>

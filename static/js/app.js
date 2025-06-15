@@ -23,3 +23,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+function confirmAction(message, formId) {
+  if (confirm(message)) {
+    document.getElementById(formId).submit();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const logoutButton = document.getElementById("logoutButton");
+
+  if (logoutButton) {
+    logoutButton.addEventListener("click", function () {
+      confirmAction("Are you sure you want to logout?", "logoutForm");
+    });
+  }
+});
+
+tinymce.init({
+  selector: "#blog_content",
+  plugins:
+    "advlist autolink lists link image charmap preview anchor searchreplace visualblocks code fullscreen insertdatetime media table paste code help wordcount",
+  toolbar:
+    "undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help",
+  menubar: false,
+  height: 300,
+  setup: function (editor) {
+    editor.on("change", function () {
+      editor.save();
+    });
+  },
+});

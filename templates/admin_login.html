@@ -1,14 +1,14 @@
-{% extends "layout.html" %} {% block content %}
+{% extends "auth_layout.html" %} {% block content %}
 <div class="main-background">
   <section class="vh-100">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col col-xl-10">
-          <div class="card" style="border-radius: 1rem">
+        <div class="col col-xl-10 image">
+          <div class="card p-3" style="border-radius: 1rem">
             <div class="row g-0">
-              <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <div class="col-md-6 col-lg-5 d-none d-md-block image">
                 <img
-                  src="static/images/Dev.png"
+                  src="static/images/chinese accents.png"
                   alt="login form"
                   class="img-fluid fade-up-in"
                   style="border-radius: 1rem 0 0 1rem"
@@ -28,17 +28,7 @@
                       value="{{ csrf_token() }}"
                     />
                     <div class="d-flex align-items-center mb-3 pb-1">
-                      <img
-                        class="fas fa-cubes fa-2x me-3"
-                        style="color: #ff6219"
-                        src="static/images/gif.gif"
-                        alt="logo"
-                        width="50"
-                        height="50"
-                      />
-                      <span class="h1 fw-bold mb-0 white-text"
-                        >Le Acupuncture Admin Login</span
-                      >
+                      <span class="h1">Admin Login</span>
                     </div>
 
                     <h5
@@ -84,7 +74,7 @@
                       <button
                         data-mdb-button-init
                         data-mdb-ripple-init
-                        class="btn btn-dark btn-lg btn-block"
+                        class="btn btn-dark btn-lg btn-block btn-secondary"
                         type="submit"
                       >
                         Login

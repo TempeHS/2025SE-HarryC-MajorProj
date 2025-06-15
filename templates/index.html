@@ -1,4 +1,5 @@
 {% extends 'layout.html' %} {% block content %}
+<div class="container-fluid px-0">
 <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button
@@ -28,21 +29,21 @@
         aria-hidden="true"
         class="bd-placeholder-img img-fluid w-100 h-100"
         preserveAspectRatio="xMidYMid slice"
-        src="static/images/carousel_photos/Le Acupuncture (3811 x 887 px).png"
+        src="static/images/carousel_photos/Carousel image 1.png"
         style="object-fit: cover"
         alt="Le Acupuncture"
       />
       <div class="container"></div>
     </div>
     <div class="carousel-item">
-      <svg
+      <img
         aria-hidden="true"
-        class="bd-placeholder-img"
-        height="100%"
+        class="bd-placeholder-img img-fluid w-100 h-100"
         preserveAspectRatio="xMidYMid slice"
-        width="100%"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+        src="static/images/carousel_photos/Carousel image 2.png"
+        style="object-fit: cover"
+        alt="Le Acupuncture"
+      />
         <rect
           width="100%"
           height="100%"
@@ -51,24 +52,25 @@
       </svg>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>
-            Some representative placeholder content for the second slide of the
-            carousel.
+          <h1 class="carousel-heading">Book Now</h1>
+          <p class="carousel-text-shadow">
+            Experience world class Acupuncture treatment
+          </br>
+            From a local Doctor of Chinese Medicine
           </p>
-          <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          <p><a class="btn btn-secondary" href="booking.html">Book Now</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <svg
+      <img
         aria-hidden="true"
-        class="bd-placeholder-img"
-        height="100%"
+        class="bd-placeholder-img img-fluid w-100 h-100"
         preserveAspectRatio="xMidYMid slice"
-        width="100%"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+        src="static/images/carousel_photos/carousel image 3.png"
+        style="object-fit: cover"
+        alt="Le Acupuncture"
+      />
         <rect
           width="100%"
           height="100%"
@@ -77,12 +79,11 @@
       </svg>
       <div class="container">
         <div class="carousel-caption text-end">
-          <h1>One more for good measure.</h1>
-          <p>
-            Some representative placeholder content for the third slide of this
-            carousel.
+          <h1 class="carousel-heading">View The Free Blog</h1>
+          <p class="carousel-text-shadow">
+            Explore expert insights, wellness tips, and real stories from our acupuncture practice. 
           </p>
-          <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          <p><a class="btn btn-secondary" href="blog.html">View Blog</a></p>
         </div>
       </div>
     </div>
@@ -106,6 +107,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+</div>
 
 <!-- Marketing messaging and featurettes -->
 <div class="container marketing">
@@ -114,11 +116,9 @@
     <div class="col-lg-4">
       <img
         aria-label="Placeholder"
-        class="bd-placeholder-img rounded-circle"
         height="140"
         preserveAspectRatio="xMidYMid slice"
         role="img"
-        style="max-width:80px"
         width="140"
         src="static/images/icons/Booking Icon.png"
       >
@@ -134,16 +134,13 @@
         Book an appointment with us directly through our website. We
         offer a variety of services to help you achieve your wellness goals.
       </p>
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
     </div>
     <div class="col-lg-4">
       <img
         aria-label="Placeholder"
-        class="bd-placeholder-img rounded-circle img-fluid"
         height="140"
         preserveAspectRatio="xMidYMid slice"
         role="img"
-        style="max-width: 80px"
         width="140"
         src="static/images/icons/Blog icon.png"
       >
@@ -160,15 +157,12 @@
         and wellness practices. Stay informed and inspired with our expert
         content.
       </p>
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
     </div>
     <div class="col-lg-4">
       <img
         aria-label="Placeholder"
-        class="bd-placeholder-img rounded-circle img-fluid"
         height="140"
         preserveAspectRatio="xMidYMid slice"
-        style="max-width: 80px"
         role="img"
         width="140"
         src="static/images/icons/about me icon.png"
@@ -186,13 +180,25 @@
         life to the art of acupuncture and holistic healing. Discover their
         journey and philosophy on wellness.
       </p>
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+    </div>
+    <div class="container text-center mt-0">
+      <div class="row no-extra-margin">
+        <div class="col">
+          <p><a class="btn btn-secondary" href="booking.html">View details &raquo;</a></p>
+        </div>
+        <div class="col">
+          <p><a class="btn btn-secondary" href="blog.html">View details &raquo;</a></p>
+        </div>
+        <div class="col">
+          <p><a class="btn btn-secondary" href="about.html">View details &raquo;</a></p>
+        </div>
+      </div>
     </div>
   </div>
   <!-- /.row -->
 
   <!-- START THE FEATURETTES -->
-  <hr class="featurette-divider" />
+  <hr class="featurette-divider-index" />
 
   <div class="row featurette">
     <div class="col-md-7">
