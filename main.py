@@ -159,12 +159,20 @@ def booking():
 @app.route("/admin_blog.html", methods=["GET", "POST"])
 def admin_blog():
     if request.method == "POST":
-        blog_data = admin.sanatize_blog(request)
-        print(blog_data)
-        success = method.post_blog(blog_data)
-        return render_template("/admin_blog.html", success=success)
-    else:
-        return render_template("/admin_blog.html")
+        delete_id = request.form.get("id")
+        if delete_id:
+            print(f"Delete ID: {delete_id}")
+            delete = method.delete_blog(delete_id)
+            data = method.get_blog()
+            return render_template("admin_blog.html", data=data, delete=delete)
+        else:
+            blog_data = admin.sanatize_blog(request)
+            print(blog_data)
+            success = method.post_blog(blog_data)
+            data = method.get_blog()
+        return render_template("/admin_blog.html", success=success, data=data)
+    data = method.get_blog()
+    return render_template("/admin_blog.html", data=data)
 
 @app.route("/admin_about.html", methods=["GET", "POST"])
 def admin_about():

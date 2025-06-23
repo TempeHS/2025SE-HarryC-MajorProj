@@ -125,6 +125,17 @@ def delete_testimonial(testimonial_id):
     except Exception as e:
         return {"error": str(e)}
 
+def delete_blog(blog_id):
+    try:
+        con = sql.connect("databaseFiles/database.db")
+        cur = con.cursor()
+        cur.execute("DELETE FROM blog WHERE id = ?", (blog_id,))
+        con.commit()
+        con.close()
+        return {"message": "Blog deleted sucessfully"}
+    except Exception as e:
+        return {"error": str(e)}
+
 def get_blogs():
     con = sql.connect("databaseFiles/database.db")
     cur = con.cursor()

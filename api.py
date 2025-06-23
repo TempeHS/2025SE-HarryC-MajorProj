@@ -107,5 +107,14 @@ def delete_testimonial(testimonial_id):
     else:
         return {"error": "Unauthorized"}, 401
 
+@api.route("/delete_blog/<int:blog_id>", methods=["POST"])
+@limiter.limit("1/second", override_defaults=False)
+def delete_blog(blog_id):
+    if request.headers.get("Authorization") == auth_key:
+        response = admin.delete_blog(blog_id)
+        return response, 200
+    else:
+        return {"error": "Unauthorized"}, 401
+
 if __name__ == "__main__":
     api.run(debug=True, host="0.0.0.0", port=3000)

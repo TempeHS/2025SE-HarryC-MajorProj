@@ -82,6 +82,16 @@ def delete_testimonial(testimonial_id):
         app.logger.critical(f"Failed to delete testimonial: {e}")
         return False
 
+def delete_blog(blog_id):
+    delete_url = f"http://127.0.1:3000/delete_blog/{blog_id}"
+    try:
+        response = requests.post(delete_url, headers=app_header)
+        response.raise_for_status()
+        return True
+    except requests.exceptions.RequestException as e:
+        app.logger.critical(f"Failed to delete blog: {e}")
+        return False
+
 def get_aboutme():
     url = "http://127.0.0.1:3000/get_aboutme"
     data = []

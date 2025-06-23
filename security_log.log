@@ -27588,3 +27588,551 @@
 2025-06-15 14:32:21,817 127.0.0.1 - - [15/Jun/2025 14:32:21] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
 2025-06-15 14:32:21,942 127.0.0.1 - - [15/Jun/2025 14:32:21] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
 2025-06-15 14:32:21,991 127.0.0.1 - - [15/Jun/2025 14:32:21] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:18:53,042 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.133:5000
+2025-06-23 13:18:53,043 [33mPress CTRL+C to quit[0m
+2025-06-23 13:18:53,043  * Restarting with stat
+2025-06-23 13:18:53,391  * Debugger is active!
+2025-06-23 13:18:53,392  * Debugger PIN: 889-905-400
+2025-06-23 13:18:58,984 127.0.0.1 - - [23/Jun/2025 13:18:58] "GET / HTTP/1.1" 200 -
+2025-06-23 13:18:59,213 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:18:59,219 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:18:59,227 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:18:59,347 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/images/carousel_photos/Carousel%20image%201.png HTTP/1.1" 200 -
+2025-06-23 13:18:59,355 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/images/carousel_photos/Carousel%20image%202.png HTTP/1.1" 200 -
+2025-06-23 13:18:59,404 127.0.0.1 - - [23/Jun/2025 13:18:59] "[32mPOST /csp_report HTTP/1.1[0m" 302 -
+2025-06-23 13:18:59,407 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:18:59,468 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/images/carousel_photos/carousel%20image%203.png HTTP/1.1" 200 -
+2025-06-23 13:18:59,902 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:18:59,943 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/images/icons/Booking%20Icon.png HTTP/1.1" 200 -
+2025-06-23 13:18:59,949 127.0.0.1 - - [23/Jun/2025 13:18:59] "GET /static/images/icons/Blog%20icon.png HTTP/1.1" 200 -
+2025-06-23 13:19:00,001 127.0.0.1 - - [23/Jun/2025 13:19:00] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:19:00,006 127.0.0.1 - - [23/Jun/2025 13:19:00] "GET /static/images/icons/about%20me%20icon.png HTTP/1.1" 200 -
+2025-06-23 13:19:00,042 127.0.0.1 - - [23/Jun/2025 13:19:00] "GET /static/images/acupuncture-needling.jpg HTTP/1.1" 200 -
+2025-06-23 13:19:00,358 127.0.0.1 - - [23/Jun/2025 13:19:00] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:19:00,361 127.0.0.1 - - [23/Jun/2025 13:19:00] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:19:00,485 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/images/logo.png HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,492 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,494 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/css/style.css/bootstrap.min.css HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,499 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/js/app.js HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,501 127.0.0.1 - - [23/Jun/2025 13:19:00] "GET / HTTP/1.1" 200 -
+2025-06-23 13:19:00,502 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/images/favicon.jpg HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,503 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/icons/desktop_screenshot.png HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,505 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/icons/icon-128x128.png HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,506 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/icons/icon-384x384.png HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,507 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/css/style.css HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,508 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/icons/icon-192x192.png HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,516 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/icons/icon-512x512.png HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,519 127.0.0.1 - - [23/Jun/2025 13:19:00] "[33mGET /static/js/static/icons/mobile_screenshot.png HTTP/1.1[0m" 404 -
+2025-06-23 13:19:00,526 127.0.0.1 - - [23/Jun/2025 13:19:00] "[32mPOST /csp_report HTTP/1.1[0m" 302 -
+2025-06-23 13:19:46,223 127.0.0.1 - - [23/Jun/2025 13:19:46] "GET /admin_login.html HTTP/1.1" 200 -
+2025-06-23 13:19:46,346 127.0.0.1 - - [23/Jun/2025 13:19:46] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:19:46,523 127.0.0.1 - - [23/Jun/2025 13:19:46] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:19:46,525 127.0.0.1 - - [23/Jun/2025 13:19:46] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:19:46,553 127.0.0.1 - - [23/Jun/2025 13:19:46] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:19:46,563 127.0.0.1 - - [23/Jun/2025 13:19:46] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:19:46,569 127.0.0.1 - - [23/Jun/2025 13:19:46] "GET /static/images/chinese%20accents.png HTTP/1.1" 200 -
+2025-06-23 13:19:52,799 127.0.0.1 - - [23/Jun/2025 13:19:52] "POST /admin_login.html HTTP/1.1" 200 -
+2025-06-23 13:19:52,864 127.0.0.1 - - [23/Jun/2025 13:19:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:19:52,879 127.0.0.1 - - [23/Jun/2025 13:19:52] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:19:52,884 127.0.0.1 - - [23/Jun/2025 13:19:52] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:19:52,887 127.0.0.1 - - [23/Jun/2025 13:19:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:19:52,889 127.0.0.1 - - [23/Jun/2025 13:19:52] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:20:06,767 Successful 2FA attempt
+2025-06-23 13:20:06,767 127.0.0.1 - - [23/Jun/2025 13:20:06] "[32mPOST /2fa.html HTTP/1.1[0m" 302 -
+2025-06-23 13:20:06,805 127.0.0.1 - - [23/Jun/2025 13:20:06] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:20:06,890 127.0.0.1 - - [23/Jun/2025 13:20:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:20:06,897 127.0.0.1 - - [23/Jun/2025 13:20:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:20:06,899 127.0.0.1 - - [23/Jun/2025 13:20:06] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:20:06,901 127.0.0.1 - - [23/Jun/2025 13:20:06] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:20:06,984 127.0.0.1 - - [23/Jun/2025 13:20:06] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:20:07,005 127.0.0.1 - - [23/Jun/2025 13:20:07] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:20:10,337 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:20:10,340 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:20:10,345 127.0.0.1 - - [23/Jun/2025 13:20:10] "GET /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:20:10,430 127.0.0.1 - - [23/Jun/2025 13:20:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:20:10,449 127.0.0.1 - - [23/Jun/2025 13:20:10] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:20:10,458 127.0.0.1 - - [23/Jun/2025 13:20:10] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:20:10,462 127.0.0.1 - - [23/Jun/2025 13:20:10] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:20:10,539 127.0.0.1 - - [23/Jun/2025 13:20:10] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:20:10,560 127.0.0.1 - - [23/Jun/2025 13:20:10] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:20:44,519 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:20:44,521 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:20:44,524 127.0.0.1 - - [23/Jun/2025 13:20:44] "GET /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:20:44,596 127.0.0.1 - - [23/Jun/2025 13:20:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:20:44,598 127.0.0.1 - - [23/Jun/2025 13:20:44] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:20:44,601 127.0.0.1 - - [23/Jun/2025 13:20:44] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:20:44,605 127.0.0.1 - - [23/Jun/2025 13:20:44] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:20:44,690 127.0.0.1 - - [23/Jun/2025 13:20:44] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:20:44,699 127.0.0.1 - - [23/Jun/2025 13:20:44] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:20:45,184 127.0.0.1 - - [23/Jun/2025 13:20:45] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:21:38,909 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:21:38,912 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:21:38,914 127.0.0.1 - - [23/Jun/2025 13:21:38] "GET /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:21:38,992 127.0.0.1 - - [23/Jun/2025 13:21:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:21:38,998 127.0.0.1 - - [23/Jun/2025 13:21:38] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:21:39,000 127.0.0.1 - - [23/Jun/2025 13:21:39] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:21:39,003 127.0.0.1 - - [23/Jun/2025 13:21:39] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:21:39,070 127.0.0.1 - - [23/Jun/2025 13:21:39] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:21:39,088 127.0.0.1 - - [23/Jun/2025 13:21:39] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:21:40,657 127.0.0.1 - - [23/Jun/2025 13:21:40] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:22:03,707 127.0.0.1 - - [23/Jun/2025 13:22:03] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:22:03,766 127.0.0.1 - - [23/Jun/2025 13:22:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:22:03,778 127.0.0.1 - - [23/Jun/2025 13:22:03] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:22:03,785 127.0.0.1 - - [23/Jun/2025 13:22:03] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:22:03,793 127.0.0.1 - - [23/Jun/2025 13:22:03] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:22:03,899 127.0.0.1 - - [23/Jun/2025 13:22:03] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:22:03,906 127.0.0.1 - - [23/Jun/2025 13:22:03] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:22:06,386 User 'AdminUser' logged out successfully
+2025-06-23 13:22:06,387 127.0.0.1 - - [23/Jun/2025 13:22:06] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-06-23 13:22:06,416 127.0.0.1 - - [23/Jun/2025 13:22:06] "GET /admin_login.html HTTP/1.1" 200 -
+2025-06-23 13:22:06,513 127.0.0.1 - - [23/Jun/2025 13:22:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:22:06,529 127.0.0.1 - - [23/Jun/2025 13:22:06] "GET /static/images/chinese%20accents.png HTTP/1.1" 200 -
+2025-06-23 13:22:06,538 127.0.0.1 - - [23/Jun/2025 13:22:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:22:06,541 127.0.0.1 - - [23/Jun/2025 13:22:06] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:22:06,544 127.0.0.1 - - [23/Jun/2025 13:22:06] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:22:06,549 127.0.0.1 - - [23/Jun/2025 13:22:06] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:22:07,652 127.0.0.1 - - [23/Jun/2025 13:22:07] "[32mGET /admin.html HTTP/1.1[0m" 302 -
+2025-06-23 13:22:07,680 127.0.0.1 - - [23/Jun/2025 13:22:07] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-06-23 13:22:07,710 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET / HTTP/1.1" 200 -
+2025-06-23 13:22:07,801 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:22:07,830 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:22:07,831 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/images/carousel_photos/carousel%20image%203.png HTTP/1.1" 200 -
+2025-06-23 13:22:07,832 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/images/icons/Blog%20icon.png HTTP/1.1" 200 -
+2025-06-23 13:22:07,834 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/images/carousel_photos/Carousel%20image%202.png HTTP/1.1" 200 -
+2025-06-23 13:22:07,835 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/images/icons/Booking%20Icon.png HTTP/1.1" 200 -
+2025-06-23 13:22:07,837 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/images/carousel_photos/Carousel%20image%201.png HTTP/1.1" 200 -
+2025-06-23 13:22:07,847 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:22:07,851 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/images/acupuncture-needling.jpg HTTP/1.1" 200 -
+2025-06-23 13:22:07,852 127.0.0.1 - - [23/Jun/2025 13:22:07] "GET /static/images/icons/about%20me%20icon.png HTTP/1.1" 200 -
+2025-06-23 13:22:07,891 127.0.0.1 - - [23/Jun/2025 13:22:07] "[32mPOST /csp_report HTTP/1.1[0m" 302 -
+2025-06-23 13:22:08,042 127.0.0.1 - - [23/Jun/2025 13:22:08] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:22:08,090 127.0.0.1 - - [23/Jun/2025 13:22:08] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:22:08,857 127.0.0.1 - - [23/Jun/2025 13:22:08] "[32mPOST /csp_report HTTP/1.1[0m" 302 -
+2025-06-23 13:22:10,108 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:22:10,110 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:22:10,125 127.0.0.1 - - [23/Jun/2025 13:22:10] "GET /blog.html HTTP/1.1" 200 -
+2025-06-23 13:22:10,224 127.0.0.1 - - [23/Jun/2025 13:22:10] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:22:10,235 127.0.0.1 - - [23/Jun/2025 13:22:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:22:10,238 127.0.0.1 - - [23/Jun/2025 13:22:10] "GET /static/images/profile_pictures/Mum%20Full%20photo.png HTTP/1.1" 200 -
+2025-06-23 13:22:10,242 127.0.0.1 - - [23/Jun/2025 13:22:10] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:22:10,246 127.0.0.1 - - [23/Jun/2025 13:22:10] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:22:10,247 127.0.0.1 - - [23/Jun/2025 13:22:10] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:22:10,250 127.0.0.1 - - [23/Jun/2025 13:22:10] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:23:46,762 127.0.0.1 - - [23/Jun/2025 13:23:46] "[32mGET /admin_blog.html HTTP/1.1[0m" 302 -
+2025-06-23 13:23:46,875 127.0.0.1 - - [23/Jun/2025 13:23:46] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-06-23 13:23:46,984 127.0.0.1 - - [23/Jun/2025 13:23:46] "GET / HTTP/1.1" 200 -
+2025-06-23 13:23:47,114 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:23:47,120 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/images/carousel_photos/Carousel%20image%202.png HTTP/1.1" 200 -
+2025-06-23 13:23:47,123 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/images/carousel_photos/carousel%20image%203.png HTTP/1.1" 200 -
+2025-06-23 13:23:47,127 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/images/carousel_photos/Carousel%20image%201.png HTTP/1.1" 200 -
+2025-06-23 13:23:47,136 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/images/icons/Blog%20icon.png HTTP/1.1" 200 -
+2025-06-23 13:23:47,138 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:23:47,140 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/images/acupuncture-needling.jpg HTTP/1.1" 200 -
+2025-06-23 13:23:47,153 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/images/icons/about%20me%20icon.png HTTP/1.1" 200 -
+2025-06-23 13:23:47,155 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:23:47,254 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:23:47,261 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/images/icons/Booking%20Icon.png HTTP/1.1" 200 -
+2025-06-23 13:23:47,311 127.0.0.1 - - [23/Jun/2025 13:23:47] "[32mPOST /csp_report HTTP/1.1[0m" 302 -
+2025-06-23 13:23:47,400 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:23:47,439 127.0.0.1 - - [23/Jun/2025 13:23:47] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:23:48,212 127.0.0.1 - - [23/Jun/2025 13:23:48] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:23:48,304 127.0.0.1 - - [23/Jun/2025 13:23:48] "[32mPOST /csp_report HTTP/1.1[0m" 302 -
+2025-06-23 13:23:52,556 127.0.0.1 - - [23/Jun/2025 13:23:52] "GET /admin_login.html HTTP/1.1" 200 -
+2025-06-23 13:23:52,643 127.0.0.1 - - [23/Jun/2025 13:23:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:23:52,661 127.0.0.1 - - [23/Jun/2025 13:23:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:23:52,665 127.0.0.1 - - [23/Jun/2025 13:23:52] "GET /static/images/chinese%20accents.png HTTP/1.1" 200 -
+2025-06-23 13:23:52,666 127.0.0.1 - - [23/Jun/2025 13:23:52] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:23:52,671 127.0.0.1 - - [23/Jun/2025 13:23:52] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:23:52,674 127.0.0.1 - - [23/Jun/2025 13:23:52] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:23:59,029 127.0.0.1 - - [23/Jun/2025 13:23:59] "POST /admin_login.html HTTP/1.1" 200 -
+2025-06-23 13:23:59,117 127.0.0.1 - - [23/Jun/2025 13:23:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:23:59,121 127.0.0.1 - - [23/Jun/2025 13:23:59] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:23:59,123 127.0.0.1 - - [23/Jun/2025 13:23:59] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:23:59,130 127.0.0.1 - - [23/Jun/2025 13:23:59] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:23:59,131 127.0.0.1 - - [23/Jun/2025 13:23:59] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:24:07,737 Successful 2FA attempt
+2025-06-23 13:24:07,738 127.0.0.1 - - [23/Jun/2025 13:24:07] "[32mPOST /2fa.html HTTP/1.1[0m" 302 -
+2025-06-23 13:24:07,792 127.0.0.1 - - [23/Jun/2025 13:24:07] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:24:07,895 127.0.0.1 - - [23/Jun/2025 13:24:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:24:07,900 127.0.0.1 - - [23/Jun/2025 13:24:07] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:24:07,903 127.0.0.1 - - [23/Jun/2025 13:24:07] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:24:07,906 127.0.0.1 - - [23/Jun/2025 13:24:07] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:24:07,978 127.0.0.1 - - [23/Jun/2025 13:24:07] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:24:07,999 127.0.0.1 - - [23/Jun/2025 13:24:07] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:24:12,867 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:24:12,869 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:24:12,872 127.0.0.1 - - [23/Jun/2025 13:24:12] "GET /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:24:12,958 127.0.0.1 - - [23/Jun/2025 13:24:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:24:12,961 127.0.0.1 - - [23/Jun/2025 13:24:12] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:24:12,964 127.0.0.1 - - [23/Jun/2025 13:24:12] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:24:12,967 127.0.0.1 - - [23/Jun/2025 13:24:12] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:24:13,039 127.0.0.1 - - [23/Jun/2025 13:24:13] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:24:13,056 127.0.0.1 - - [23/Jun/2025 13:24:13] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:25:36,169  * Detected change in '/workspaces/2025SE-HarryC-MajorProj/main.py', reloading
+2025-06-23 13:25:36,214  * Restarting with stat
+2025-06-23 13:25:36,567  * Debugger is active!
+2025-06-23 13:25:36,567  * Debugger PIN: 889-905-400
+2025-06-23 13:25:37,037 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:25:37,519 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:25:37,533 127.0.0.1 - - [23/Jun/2025 13:25:37] "GET /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:25:37,639 127.0.0.1 - - [23/Jun/2025 13:25:37] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:25:37,756 127.0.0.1 - - [23/Jun/2025 13:25:37] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:25:37,794 127.0.0.1 - - [23/Jun/2025 13:25:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:25:37,822 127.0.0.1 - - [23/Jun/2025 13:25:37] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:25:37,826 127.0.0.1 - - [23/Jun/2025 13:25:37] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:25:37,837 127.0.0.1 - - [23/Jun/2025 13:25:37] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:25:38,277 127.0.0.1 - - [23/Jun/2025 13:25:38] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:26:30,329 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:26:30,331 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:26:30,332 127.0.0.1 - - [23/Jun/2025 13:26:30] "GET /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:26:30,412 127.0.0.1 - - [23/Jun/2025 13:26:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:26:30,414 127.0.0.1 - - [23/Jun/2025 13:26:30] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:26:30,417 127.0.0.1 - - [23/Jun/2025 13:26:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:26:30,421 127.0.0.1 - - [23/Jun/2025 13:26:30] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:26:30,515 127.0.0.1 - - [23/Jun/2025 13:26:30] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:26:30,532 127.0.0.1 - - [23/Jun/2025 13:26:30] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:26:33,127 127.0.0.1 - - [23/Jun/2025 13:26:33] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:26:40,077 127.0.0.1 - - [23/Jun/2025 13:26:40] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:26:40,159 127.0.0.1 - - [23/Jun/2025 13:26:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:26:40,161 127.0.0.1 - - [23/Jun/2025 13:26:40] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:26:40,164 127.0.0.1 - - [23/Jun/2025 13:26:40] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:26:40,166 127.0.0.1 - - [23/Jun/2025 13:26:40] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:26:40,248 127.0.0.1 - - [23/Jun/2025 13:26:40] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:26:40,272 127.0.0.1 - - [23/Jun/2025 13:26:40] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:26:51,455 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:26:51,458 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:26:51,459 127.0.0.1 - - [23/Jun/2025 13:26:51] "GET /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:26:51,534 127.0.0.1 - - [23/Jun/2025 13:26:51] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:26:51,545 127.0.0.1 - - [23/Jun/2025 13:26:51] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:26:51,549 127.0.0.1 - - [23/Jun/2025 13:26:51] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:26:51,551 127.0.0.1 - - [23/Jun/2025 13:26:51] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:26:51,622 127.0.0.1 - - [23/Jun/2025 13:26:51] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:26:51,636 127.0.0.1 - - [23/Jun/2025 13:26:51] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:26:54,100 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:26:54,103 http://127.0.1:3000 "POST /delete_testimonial/3 HTTP/1.1" 200 51
+2025-06-23 13:26:54,103 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:26:54,105 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:26:54,108 127.0.0.1 - - [23/Jun/2025 13:26:54] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:26:54,184 127.0.0.1 - - [23/Jun/2025 13:26:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:26:54,192 127.0.0.1 - - [23/Jun/2025 13:26:54] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:26:54,195 127.0.0.1 - - [23/Jun/2025 13:26:54] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:26:54,198 127.0.0.1 - - [23/Jun/2025 13:26:54] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:26:54,268 127.0.0.1 - - [23/Jun/2025 13:26:54] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:26:54,287 127.0.0.1 - - [23/Jun/2025 13:26:54] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:26:57,575 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:26:57,578 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:26:57,589 127.0.0.1 - - [23/Jun/2025 13:26:57] "GET /blog.html HTTP/1.1" 200 -
+2025-06-23 13:26:57,690 127.0.0.1 - - [23/Jun/2025 13:26:57] "GET /static/images/profile_pictures/Mum%20Full%20photo.png HTTP/1.1" 200 -
+2025-06-23 13:26:57,695 127.0.0.1 - - [23/Jun/2025 13:26:57] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:26:57,706 127.0.0.1 - - [23/Jun/2025 13:26:57] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:26:57,710 127.0.0.1 - - [23/Jun/2025 13:26:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:26:57,715 127.0.0.1 - - [23/Jun/2025 13:26:57] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:26:57,717 127.0.0.1 - - [23/Jun/2025 13:26:57] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:26:57,725 127.0.0.1 - - [23/Jun/2025 13:26:57] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:26:59,180 127.0.0.1 - - [23/Jun/2025 13:26:59] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:27:02,319 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:27:02,321 http://127.0.1:3000 "POST /delete_testimonial/3 HTTP/1.1" 200 51
+2025-06-23 13:27:02,322 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:27:02,324 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:27:02,325 127.0.0.1 - - [23/Jun/2025 13:27:02] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:27:02,404 127.0.0.1 - - [23/Jun/2025 13:27:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:27:02,406 127.0.0.1 - - [23/Jun/2025 13:27:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:27:02,409 127.0.0.1 - - [23/Jun/2025 13:27:02] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:27:02,412 127.0.0.1 - - [23/Jun/2025 13:27:02] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:27:02,497 127.0.0.1 - - [23/Jun/2025 13:27:02] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:27:02,506 127.0.0.1 - - [23/Jun/2025 13:27:02] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:27:03,485 127.0.0.1 - - [23/Jun/2025 13:27:03] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:27:05,270 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:27:05,272 http://127.0.1:3000 "POST /delete_testimonial/3 HTTP/1.1" 200 51
+2025-06-23 13:27:05,273 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:27:05,274 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:27:05,275 127.0.0.1 - - [23/Jun/2025 13:27:05] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:27:05,343 127.0.0.1 - - [23/Jun/2025 13:27:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:27:05,355 127.0.0.1 - - [23/Jun/2025 13:27:05] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:27:05,358 127.0.0.1 - - [23/Jun/2025 13:27:05] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:27:05,361 127.0.0.1 - - [23/Jun/2025 13:27:05] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:27:05,438 127.0.0.1 - - [23/Jun/2025 13:27:05] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:27:05,454 127.0.0.1 - - [23/Jun/2025 13:27:05] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:27:38,482  * Detected change in '/workspaces/2025SE-HarryC-MajorProj/main.py', reloading
+2025-06-23 13:27:38,535  * Restarting with stat
+2025-06-23 13:27:38,880  * Debugger is active!
+2025-06-23 13:27:38,880  * Debugger PIN: 889-905-400
+2025-06-23 13:28:18,152  * Detected change in '/workspaces/2025SE-HarryC-MajorProj/admin.py', reloading
+2025-06-23 13:28:18,206  * Restarting with stat
+2025-06-23 13:28:18,563  * Debugger is active!
+2025-06-23 13:28:18,563  * Debugger PIN: 889-905-400
+2025-06-23 13:28:50,790  * Detected change in '/workspaces/2025SE-HarryC-MajorProj/api.py', reloading
+2025-06-23 13:28:50,843  * Restarting with stat
+2025-06-23 13:28:51,237  * Debugger is active!
+2025-06-23 13:28:51,237  * Debugger PIN: 889-905-400
+2025-06-23 13:29:13,519 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:29:13,524 http://127.0.1:3000 "POST /delete_testimonial/3 HTTP/1.1" 200 51
+2025-06-23 13:29:13,525 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:29:13,535 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:29:13,555 127.0.0.1 - - [23/Jun/2025 13:29:13] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:29:13,650 127.0.0.1 - - [23/Jun/2025 13:29:13] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:29:13,790 127.0.0.1 - - [23/Jun/2025 13:29:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:29:13,802 127.0.0.1 - - [23/Jun/2025 13:29:13] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:29:13,818 127.0.0.1 - - [23/Jun/2025 13:29:13] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:29:13,874 127.0.0.1 - - [23/Jun/2025 13:29:13] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:29:13,946 127.0.0.1 - - [23/Jun/2025 13:29:13] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:29:16,170 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:29:16,173 http://127.0.1:3000 "POST /delete_testimonial/3 HTTP/1.1" 200 51
+2025-06-23 13:29:16,173 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:29:16,175 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:29:16,176 127.0.0.1 - - [23/Jun/2025 13:29:16] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:29:16,264 127.0.0.1 - - [23/Jun/2025 13:29:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:29:16,268 127.0.0.1 - - [23/Jun/2025 13:29:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:29:16,271 127.0.0.1 - - [23/Jun/2025 13:29:16] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:29:16,276 127.0.0.1 - - [23/Jun/2025 13:29:16] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:29:16,349 127.0.0.1 - - [23/Jun/2025 13:29:16] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:29:16,363 127.0.0.1 - - [23/Jun/2025 13:29:16] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:30:59,981  * Detected change in '/workspaces/2025SE-HarryC-MajorProj/main.py', reloading
+2025-06-23 13:31:00,033  * Restarting with stat
+2025-06-23 13:31:00,391  * Debugger is active!
+2025-06-23 13:31:00,391  * Debugger PIN: 889-905-400
+2025-06-23 13:31:10,787 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:31:10,790 http://127.0.1:3000 "POST /delete_testimonial/3 HTTP/1.1" 200 51
+2025-06-23 13:31:10,791 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:31:10,793 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2431
+2025-06-23 13:31:10,803 127.0.0.1 - - [23/Jun/2025 13:31:10] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:31:11,116 127.0.0.1 - - [23/Jun/2025 13:31:11] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:31:11,162 127.0.0.1 - - [23/Jun/2025 13:31:11] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:31:11,174 127.0.0.1 - - [23/Jun/2025 13:31:11] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:31:11,178 127.0.0.1 - - [23/Jun/2025 13:31:11] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:31:11,313 127.0.0.1 - - [23/Jun/2025 13:31:11] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:31:11,319 127.0.0.1 - - [23/Jun/2025 13:31:11] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:33:09,856  * Detected change in '/workspaces/2025SE-HarryC-MajorProj/methods.py', reloading
+2025-06-23 13:33:09,906  * Restarting with stat
+2025-06-23 13:33:10,259  * Debugger is active!
+2025-06-23 13:33:10,260  * Debugger PIN: 889-905-400
+2025-06-23 13:33:26,879 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:33:26,884 http://127.0.1:3000 "POST /delete_blog/3 HTTP/1.1" 200 44
+2025-06-23 13:33:26,885 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:33:26,887 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 3
+2025-06-23 13:33:26,895 127.0.0.1 - - [23/Jun/2025 13:33:26] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:33:27,170 127.0.0.1 - - [23/Jun/2025 13:33:27] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:33:27,173 127.0.0.1 - - [23/Jun/2025 13:33:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:33:27,178 127.0.0.1 - - [23/Jun/2025 13:33:27] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:33:27,188 127.0.0.1 - - [23/Jun/2025 13:33:27] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:33:27,268 127.0.0.1 - - [23/Jun/2025 13:33:27] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:33:27,336 127.0.0.1 - - [23/Jun/2025 13:33:27] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:33:29,883 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:33:29,885 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 3
+2025-06-23 13:33:29,896 127.0.0.1 - - [23/Jun/2025 13:33:29] "GET /blog.html HTTP/1.1" 200 -
+2025-06-23 13:33:29,981 127.0.0.1 - - [23/Jun/2025 13:33:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:33:29,985 127.0.0.1 - - [23/Jun/2025 13:33:29] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:33:29,988 127.0.0.1 - - [23/Jun/2025 13:33:29] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:33:29,991 127.0.0.1 - - [23/Jun/2025 13:33:29] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:33:29,993 127.0.0.1 - - [23/Jun/2025 13:33:29] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:33:29,996 127.0.0.1 - - [23/Jun/2025 13:33:29] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:33:31,162 127.0.0.1 - - [23/Jun/2025 13:33:31] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:33:44,450 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:33:44,458 http://127.0.0.1:3000 "POST /post_blog HTTP/1.1" 200 43
+2025-06-23 13:33:44,461 127.0.0.1 - - [23/Jun/2025 13:33:44] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:33:44,538 127.0.0.1 - - [23/Jun/2025 13:33:44] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:33:44,544 127.0.0.1 - - [23/Jun/2025 13:33:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:33:44,547 127.0.0.1 - - [23/Jun/2025 13:33:44] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:33:44,550 127.0.0.1 - - [23/Jun/2025 13:33:44] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:33:44,628 127.0.0.1 - - [23/Jun/2025 13:33:44] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:33:44,652 127.0.0.1 - - [23/Jun/2025 13:33:44] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:33:49,533 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:33:49,542 http://127.0.0.1:3000 "POST /post_blog HTTP/1.1" 200 43
+2025-06-23 13:33:49,543 127.0.0.1 - - [23/Jun/2025 13:33:49] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:33:49,620 127.0.0.1 - - [23/Jun/2025 13:33:49] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:33:49,627 127.0.0.1 - - [23/Jun/2025 13:33:49] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:33:49,629 127.0.0.1 - - [23/Jun/2025 13:33:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:33:49,633 127.0.0.1 - - [23/Jun/2025 13:33:49] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:33:49,717 127.0.0.1 - - [23/Jun/2025 13:33:49] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:33:49,738 127.0.0.1 - - [23/Jun/2025 13:33:49] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:33:49,887 127.0.0.1 - - [23/Jun/2025 13:33:49] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:33:52,239 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:33:52,241 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 5009
+2025-06-23 13:33:52,242 127.0.0.1 - - [23/Jun/2025 13:33:52] "GET /blog.html HTTP/1.1" 200 -
+2025-06-23 13:33:52,350 127.0.0.1 - - [23/Jun/2025 13:33:52] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:33:52,352 127.0.0.1 - - [23/Jun/2025 13:33:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:33:52,354 127.0.0.1 - - [23/Jun/2025 13:33:52] "GET /static/images/profile_pictures/Mum%20Full%20photo.png HTTP/1.1" 200 -
+2025-06-23 13:33:52,359 127.0.0.1 - - [23/Jun/2025 13:33:52] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:33:52,360 127.0.0.1 - - [23/Jun/2025 13:33:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:33:52,363 127.0.0.1 - - [23/Jun/2025 13:33:52] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:33:52,369 127.0.0.1 - - [23/Jun/2025 13:33:52] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:33:53,205 127.0.0.1 - - [23/Jun/2025 13:33:53] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:33:58,911 127.0.0.1 - - [23/Jun/2025 13:33:58] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:33:59,014 127.0.0.1 - - [23/Jun/2025 13:33:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:33:59,017 127.0.0.1 - - [23/Jun/2025 13:33:59] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:33:59,021 127.0.0.1 - - [23/Jun/2025 13:33:59] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:33:59,024 127.0.0.1 - - [23/Jun/2025 13:33:59] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:33:59,116 127.0.0.1 - - [23/Jun/2025 13:33:59] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:33:59,137 127.0.0.1 - - [23/Jun/2025 13:33:59] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:34:00,417 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:34:00,419 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 5009
+2025-06-23 13:34:00,420 127.0.0.1 - - [23/Jun/2025 13:34:00] "GET /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:34:00,510 127.0.0.1 - - [23/Jun/2025 13:34:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:34:00,513 127.0.0.1 - - [23/Jun/2025 13:34:00] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:34:00,517 127.0.0.1 - - [23/Jun/2025 13:34:00] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:34:00,520 127.0.0.1 - - [23/Jun/2025 13:34:00] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:34:00,589 127.0.0.1 - - [23/Jun/2025 13:34:00] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:34:00,611 127.0.0.1 - - [23/Jun/2025 13:34:00] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:34:05,026 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:34:05,032 http://127.0.1:3000 "POST /delete_blog/8 HTTP/1.1" 200 44
+2025-06-23 13:34:05,033 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:34:05,035 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2506
+2025-06-23 13:34:05,036 127.0.0.1 - - [23/Jun/2025 13:34:05] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:34:05,110 127.0.0.1 - - [23/Jun/2025 13:34:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:34:05,113 127.0.0.1 - - [23/Jun/2025 13:34:05] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:34:05,116 127.0.0.1 - - [23/Jun/2025 13:34:05] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:34:05,121 127.0.0.1 - - [23/Jun/2025 13:34:05] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:34:05,213 127.0.0.1 - - [23/Jun/2025 13:34:05] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:34:05,233 127.0.0.1 - - [23/Jun/2025 13:34:05] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:34:07,251 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:34:07,253 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2506
+2025-06-23 13:34:07,254 127.0.0.1 - - [23/Jun/2025 13:34:07] "GET /blog.html HTTP/1.1" 200 -
+2025-06-23 13:34:07,353 127.0.0.1 - - [23/Jun/2025 13:34:07] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:34:07,357 127.0.0.1 - - [23/Jun/2025 13:34:07] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:34:07,360 127.0.0.1 - - [23/Jun/2025 13:34:07] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:34:07,361 127.0.0.1 - - [23/Jun/2025 13:34:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:34:07,362 127.0.0.1 - - [23/Jun/2025 13:34:07] "GET /static/images/profile_pictures/Mum%20Full%20photo.png HTTP/1.1" 200 -
+2025-06-23 13:34:07,367 127.0.0.1 - - [23/Jun/2025 13:34:07] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:34:07,369 127.0.0.1 - - [23/Jun/2025 13:34:07] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:34:08,658 127.0.0.1 - - [23/Jun/2025 13:34:08] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-06-23 13:34:25,649 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:34:25,657 http://127.0.0.1:3000 "POST /post_blog HTTP/1.1" 200 43
+2025-06-23 13:34:25,658 127.0.0.1 - - [23/Jun/2025 13:34:25] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:34:25,733 127.0.0.1 - - [23/Jun/2025 13:34:25] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:34:25,738 127.0.0.1 - - [23/Jun/2025 13:34:25] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:34:25,741 127.0.0.1 - - [23/Jun/2025 13:34:25] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:34:25,743 127.0.0.1 - - [23/Jun/2025 13:34:25] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:34:25,822 127.0.0.1 - - [23/Jun/2025 13:34:25] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:34:25,838 127.0.0.1 - - [23/Jun/2025 13:34:25] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:39:55,548 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.180:5000
+2025-06-23 13:39:55,548 [33mPress CTRL+C to quit[0m
+2025-06-23 13:39:55,548  * Restarting with stat
+2025-06-23 13:39:55,957  * Debugger is active!
+2025-06-23 13:39:56,060  * Debugger PIN: 465-648-548
+2025-06-23 13:40:05,820 127.0.0.1 - - [23/Jun/2025 13:40:05] "GET / HTTP/1.1" 200 -
+2025-06-23 13:40:06,162 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/images/carousel_photos/Carousel%20image%202.png HTTP/1.1" 200 -
+2025-06-23 13:40:06,485 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:06,523 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/images/carousel_photos/carousel%20image%203.png HTTP/1.1" 200 -
+2025-06-23 13:40:06,668 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:06,669 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/images/icons/Booking%20Icon.png HTTP/1.1" 200 -
+2025-06-23 13:40:06,670 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:06,747 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/images/icons/Blog%20icon.png HTTP/1.1" 200 -
+2025-06-23 13:40:06,748 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/images/icons/about%20me%20icon.png HTTP/1.1" 200 -
+2025-06-23 13:40:06,748 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/images/acupuncture-needling.jpg HTTP/1.1" 200 -
+2025-06-23 13:40:06,751 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:06,755 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/images/carousel_photos/Carousel%20image%201.png HTTP/1.1" 200 -
+2025-06-23 13:40:06,758 {"csp-report":{"document-uri":"https://literate-adventure-pv5qv7qx4ggh9w4j-5000.app.github.dev/","referrer":"https://literate-adventure-pv5qv7qx4ggh9w4j.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self' www.instagram.com https://cdn.tiny.cloud; img-src 'self' data: cdninstagram.com; child-src 'self'; default-src 'self'; style-src 'self' 'unsafe-inline' www.instagram.com; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'self' www.instagram.com le-acupuncture.au2.cliniko.com www.google.com https://cdn.tiny.cloud","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap","status-code":200,"script-sample":""}}
+2025-06-23 13:40:06,760 127.0.0.1 - - [23/Jun/2025 13:40:06] "POST /csp_report HTTP/1.1" 200 -
+2025-06-23 13:40:06,991 127.0.0.1 - - [23/Jun/2025 13:40:06] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:07,040 127.0.0.1 - - [23/Jun/2025 13:40:07] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:07,797 {"csp-report":{"document-uri":"https://literate-adventure-pv5qv7qx4ggh9w4j-5000.app.github.dev/","referrer":"https://literate-adventure-pv5qv7qx4ggh9w4j.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self' www.instagram.com https://cdn.tiny.cloud; img-src 'self' data: cdninstagram.com; child-src 'self'; default-src 'self'; style-src 'self' 'unsafe-inline' www.instagram.com; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'self' www.instagram.com le-acupuncture.au2.cliniko.com www.google.com https://cdn.tiny.cloud","disposition":"enforce","blocked-uri":"https://literate-adventure-pv5qv7qx4ggh9w4j-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-06-23 13:40:07,797 127.0.0.1 - - [23/Jun/2025 13:40:07] "POST /csp_report HTTP/1.1" 200 -
+2025-06-23 13:40:09,997 127.0.0.1 - - [23/Jun/2025 13:40:09] "GET /admin_login.html HTTP/1.1" 200 -
+2025-06-23 13:40:10,110 127.0.0.1 - - [23/Jun/2025 13:40:10] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:10,114 127.0.0.1 - - [23/Jun/2025 13:40:10] "GET /static/images/chinese%20accents.png HTTP/1.1" 200 -
+2025-06-23 13:40:10,116 127.0.0.1 - - [23/Jun/2025 13:40:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:10,118 127.0.0.1 - - [23/Jun/2025 13:40:10] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:10,122 127.0.0.1 - - [23/Jun/2025 13:40:10] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:10,125 127.0.0.1 - - [23/Jun/2025 13:40:10] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:17,345 127.0.0.1 - - [23/Jun/2025 13:40:17] "POST /admin_login.html HTTP/1.1" 200 -
+2025-06-23 13:40:17,434 127.0.0.1 - - [23/Jun/2025 13:40:17] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:17,451 127.0.0.1 - - [23/Jun/2025 13:40:17] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:17,454 127.0.0.1 - - [23/Jun/2025 13:40:17] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:17,459 127.0.0.1 - - [23/Jun/2025 13:40:17] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:17,464 127.0.0.1 - - [23/Jun/2025 13:40:17] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:22,016 Successful 2FA attempt
+2025-06-23 13:40:22,016 127.0.0.1 - - [23/Jun/2025 13:40:22] "[32mPOST /2fa.html HTTP/1.1[0m" 302 -
+2025-06-23 13:40:22,056 127.0.0.1 - - [23/Jun/2025 13:40:22] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:40:22,144 127.0.0.1 - - [23/Jun/2025 13:40:22] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:22,149 127.0.0.1 - - [23/Jun/2025 13:40:22] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:22,151 127.0.0.1 - - [23/Jun/2025 13:40:22] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:22,153 127.0.0.1 - - [23/Jun/2025 13:40:22] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:22,237 127.0.0.1 - - [23/Jun/2025 13:40:22] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:22,260 127.0.0.1 - - [23/Jun/2025 13:40:22] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:27,199 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:40:27,202 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2703
+2025-06-23 13:40:27,207 127.0.0.1 - - [23/Jun/2025 13:40:27] "GET /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:40:27,296 127.0.0.1 - - [23/Jun/2025 13:40:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:27,303 127.0.0.1 - - [23/Jun/2025 13:40:27] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:27,307 127.0.0.1 - - [23/Jun/2025 13:40:27] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:27,310 127.0.0.1 - - [23/Jun/2025 13:40:27] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:27,390 127.0.0.1 - - [23/Jun/2025 13:40:27] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:27,406 127.0.0.1 - - [23/Jun/2025 13:40:27] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:30,149 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:40:30,155 http://127.0.1:3000 "POST /delete_blog/9 HTTP/1.1" 200 44
+2025-06-23 13:40:30,156 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:40:30,158 http://127.0.0.1:3000 "GET /get_blog HTTP/1.1" 200 2506
+2025-06-23 13:40:30,162 127.0.0.1 - - [23/Jun/2025 13:40:30] "POST /admin_blog.html HTTP/1.1" 200 -
+2025-06-23 13:40:30,247 127.0.0.1 - - [23/Jun/2025 13:40:30] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:30,250 127.0.0.1 - - [23/Jun/2025 13:40:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:30,253 127.0.0.1 - - [23/Jun/2025 13:40:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:30,255 127.0.0.1 - - [23/Jun/2025 13:40:30] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:30,357 127.0.0.1 - - [23/Jun/2025 13:40:30] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:30,368 127.0.0.1 - - [23/Jun/2025 13:40:30] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:31,821 127.0.0.1 - - [23/Jun/2025 13:40:31] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:40:31,907 127.0.0.1 - - [23/Jun/2025 13:40:31] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:31,911 127.0.0.1 - - [23/Jun/2025 13:40:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:31,913 127.0.0.1 - - [23/Jun/2025 13:40:31] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:31,916 127.0.0.1 - - [23/Jun/2025 13:40:31] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:32,016 127.0.0.1 - - [23/Jun/2025 13:40:32] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:32,028 127.0.0.1 - - [23/Jun/2025 13:40:32] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:33,137 Starting new HTTP connection (1): 127.0.1:3000
+2025-06-23 13:40:33,139 http://127.0.1:3000 "GET /get_testimonials HTTP/1.1" 200 553
+2025-06-23 13:40:33,146 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /admin_testimonials.html HTTP/1.1" 200 -
+2025-06-23 13:40:33,233 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:33,246 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:33,249 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:33,251 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:33,326 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:33,337 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:33,367 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /static/images/customer_profile_photos/Max%20Widdy.jpg HTTP/1.1" 200 -
+2025-06-23 13:40:33,372 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /static/images/customer_profile_photos/donniekelleher.jpg HTTP/1.1" 200 -
+2025-06-23 13:40:33,374 127.0.0.1 - - [23/Jun/2025 13:40:33] "GET /static/images/customer_profile_photos/dr%20house.jpg HTTP/1.1" 200 -
+2025-06-23 13:40:34,480 127.0.0.1 - - [23/Jun/2025 13:40:34] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:40:34,581 127.0.0.1 - - [23/Jun/2025 13:40:34] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:34,584 127.0.0.1 - - [23/Jun/2025 13:40:34] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:34,588 127.0.0.1 - - [23/Jun/2025 13:40:34] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:34,592 127.0.0.1 - - [23/Jun/2025 13:40:34] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:34,691 127.0.0.1 - - [23/Jun/2025 13:40:34] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:34,709 127.0.0.1 - - [23/Jun/2025 13:40:34] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:35,274 Starting new HTTP connection (1): 127.0.0.1:3000
+2025-06-23 13:40:35,277 http://127.0.0.1:3000 "GET /get_aboutme HTTP/1.1" 200 954
+2025-06-23 13:40:35,282 127.0.0.1 - - [23/Jun/2025 13:40:35] "GET /admin_about.html HTTP/1.1" 200 -
+2025-06-23 13:40:35,374 127.0.0.1 - - [23/Jun/2025 13:40:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:35,377 127.0.0.1 - - [23/Jun/2025 13:40:35] "GET /static/images/profile_pictures/Mum%20Full%20photo.png HTTP/1.1" 200 -
+2025-06-23 13:40:35,385 127.0.0.1 - - [23/Jun/2025 13:40:35] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:35,391 127.0.0.1 - - [23/Jun/2025 13:40:35] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:35,534 127.0.0.1 - - [23/Jun/2025 13:40:35] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:35,545 127.0.0.1 - - [23/Jun/2025 13:40:35] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:35,546 127.0.0.1 - - [23/Jun/2025 13:40:35] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:36,394 127.0.0.1 - - [23/Jun/2025 13:40:36] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:40:36,478 127.0.0.1 - - [23/Jun/2025 13:40:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:36,482 127.0.0.1 - - [23/Jun/2025 13:40:36] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:36,484 127.0.0.1 - - [23/Jun/2025 13:40:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:36,488 127.0.0.1 - - [23/Jun/2025 13:40:36] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:36,563 127.0.0.1 - - [23/Jun/2025 13:40:36] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:36,572 127.0.0.1 - - [23/Jun/2025 13:40:36] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:40,981 127.0.0.1 - - [23/Jun/2025 13:40:40] "GET /admin_change_password.html HTTP/1.1" 200 -
+2025-06-23 13:40:41,080 127.0.0.1 - - [23/Jun/2025 13:40:41] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:41,082 127.0.0.1 - - [23/Jun/2025 13:40:41] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:41,084 127.0.0.1 - - [23/Jun/2025 13:40:41] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:41,088 127.0.0.1 - - [23/Jun/2025 13:40:41] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:41,175 127.0.0.1 - - [23/Jun/2025 13:40:41] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:41,188 127.0.0.1 - - [23/Jun/2025 13:40:41] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:40:43,016 127.0.0.1 - - [23/Jun/2025 13:40:43] "GET /admin.html HTTP/1.1" 200 -
+2025-06-23 13:40:43,132 127.0.0.1 - - [23/Jun/2025 13:40:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-23 13:40:43,134 127.0.0.1 - - [23/Jun/2025 13:40:43] "GET /static/images/navbar%20picture.png HTTP/1.1" 200 -
+2025-06-23 13:40:43,138 127.0.0.1 - - [23/Jun/2025 13:40:43] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-23 13:40:43,142 127.0.0.1 - - [23/Jun/2025 13:40:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-23 13:40:43,243 127.0.0.1 - - [23/Jun/2025 13:40:43] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-06-23 13:40:43,264 127.0.0.1 - - [23/Jun/2025 13:40:43] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-06-23 13:42:30,673  * Detected change in '/workspaces/2025SE-HarryC-MajorProj/main.py', reloading
+2025-06-23 13:42:30,754  * Restarting with stat
+2025-06-23 13:42:31,245  * Debugger is active!
+2025-06-23 13:42:31,245  * Debugger PIN: 465-648-548
