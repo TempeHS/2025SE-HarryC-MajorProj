@@ -5,9 +5,9 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask import jsonify, request
 import logging
-import admin
+import blog_admin as admin_b
+import testimonial_admin as admin_t
 import userManagement as dbHandler
-import testimonials as test
 
 auth_key = "4L50v92nOgcDCYUM"
 api = Flask(__name__)
@@ -27,13 +27,6 @@ def get():
     return ("API Works"), 200
 
 
-@api.route("/add_extension", methods=["POST"])
-@limiter.limit("1/second", override_defaults=False)
-def post():
-    data = request.get_json()
-    return data, 201
-
-
 @api.route("/add_testimonial", methods=["POST"])
 @limiter.limit("1/second", override_defaults=False)
 def add_testimonial():
@@ -41,7 +34,7 @@ def add_testimonial():
         data = request.get_json()
         print(f"Received data: {data}")
         logging.debug(f"Received data: {data}")
-        response = admin.add_testimonial(data)
+        response = admin_t.add_testimonial(data)
         return response, 201 if response else 400
     else:
         return {"error": "Unauthorized"}, 401
@@ -51,7 +44,7 @@ def add_testimonial():
 @limiter.limit("1/second", override_defaults=False)
 def get_testimonials():
     if request.headers.get("Authorization") == auth_key:
-        testimonials = test.get_testiominals()
+        testimonials = admin_t.get_testiominals()
         return testimonials, 200
     else:
         return {"error": "Unauthorized"}, 401
@@ -60,7 +53,7 @@ def get_testimonials():
 @limiter.limit("1/second", override_defaults=False)
 def get_aboutme():
     if request.headers.get("Authorization") == auth_key:
-        data = admin.get_aboutme()
+        data = admin_b.get_aboutme()
         return data, 200
     else:
         return {"error": "Unauthorized"}, 401
@@ -71,7 +64,7 @@ def get_aboutme():
 def post_blog():
     if request.headers.get("Authorization") == auth_key:
         data = request.get_json()
-        response = admin.post_blog(data)
+        response = admin_b.post_blog(data)
         print(response)
         return response, 200
     else:
@@ -81,7 +74,7 @@ def post_blog():
 @limiter.limit("1/second", override_defaults=False)
 def get_blog():
     if request.headers.get("Authorization") == auth_key:
-        blog = admin.get_blogs()
+        blog = admin_b.get_blogs()
         return blog, 200
     else:
         return {"error": "Unauthorized"}, 401
@@ -92,7 +85,7 @@ def get_blog():
 def change_aboutme():
     if request.headers.get("Authorization") == auth_key:
         data = request.get_json()
-        response = admin.update_aboutme(data)
+        response = admin_b.update_aboutme(data)
         print(response)
         return response, 200
     else:
@@ -102,7 +95,7 @@ def change_aboutme():
 @limiter.limit("1/second", override_defaults=False)
 def delete_testimonial(testimonial_id):
     if request.headers.get("Authorization") == auth_key:
-        response = admin.delete_testimonial(testimonial_id)
+        response = admin_t.delete_testimonial(testimonial_id)
         return response, 200
     else:
         return {"error": "Unauthorized"}, 401
@@ -111,7 +104,7 @@ def delete_testimonial(testimonial_id):
 @limiter.limit("1/second", override_defaults=False)
 def delete_blog(blog_id):
     if request.headers.get("Authorization") == auth_key:
-        response = admin.delete_blog(blog_id)
+        response = admin_b.delete_blog(blog_id)
         return response, 200
     else:
         return {"error": "Unauthorized"}, 401

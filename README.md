@@ -1,57 +1,59 @@
-# Secure Flask Bootstrap PWA Template
+# Overview
 
-This Flask template has been built from the ground up to be a secure Progressive Web App. It includes a secure form and Bootstrap sample components ready to be connected to a SQLite3 database. All minimum PWA standards have been integrated, and placeholder images have been provided for all the icon and image components.
+This is a pilot implementation of a progressive web application for an Acupuncturist. The website includes static user features such as a home page, booking page, blog page and about me page, which can be configured through the admin dashboard.
 
 ## Dependencies
 
-- VSCode or GitHub Codespaces (preconfigured for docker)
-- Python 3+
-- pip install Flask
-- pip install SQLite3
-- pip install bcrypt
-- pip install flask_wtf
+Install all required dependencies using:
 
-## Secure Features
+```bash
+pip install -r requirements.txt
+```
 
-- Strict Content Security Policy
-  - No inline `<script></script>`.
-  - Restricted `<iframe>` loading
-  - CORS JS blocked
-- HTML Languaged declared.
-- Meta character set declared.
-- Private folders use .folderName syntax.
-- [Bootstrap 5.3](https://getbootstrap.com/) components served local files.
-- CSRFProtect applied to form.
-- Form Pattern expression declared.
+## How to use the website as an enduser
 
-## To be implemented by developers
+- Use this codespace in google chrome
 
-- Web content, [Bootstrap 5.3](https://getbootstrap.com/) ready
-- [SQLite](https://docs.python.org/3/library/sqlite3.html) database design and integration
-- Input sanitisation
-- Login, authentication or session management
-- Password encryption using [bcrypt](https://pypi.org/project/bcrypt/)
-- SSL Encryption
+- Run main.py
 
-## Privacy advice for developers
+```bash
+python main.py
+```
 
-- The app should have a privacy handling policy
-- Only data essential for the app should be collected
-- Users should be given the option to download or delete their data
-- Passwords should be encrypted, including a salt, before hashing
+- Run api.py
 
-## Security advice for developers
+```bash
+python api.py
+```
 
-- All inputs should be sanitised before processing or storing
-- If including login, authentication and session management should be implemented
-- SSL Encryption and HTTPS should be implemented
-- Use Jinga2 components when passing variables to the frontend
-- Use query parameters for all SQL queries
+- Now you can navigate the site as usual
 
-## Content advice for developers
+[Watch: Website Navigation Demo](readme_files/vid%20of%20le%20acupuncture.mp4)
 
-- All templates are [Bootstrap 5.3](https://getbootstrap.com/) ready
-- [SQLite](https://docs.python.org/3/library/sqlite3.html) has been provided for database design
+## How to use the website as an adminastrator
 
-> [!TIP]
-> Developers should [monitor Bootstrap 5.3.3 for discovered vulnerabilities](https://security.snyk.io/package/npm/bootstrap) and patch or update as needed.
+- In the browser url when you're on the home page of the webiste type in /admin_login.html
+- Use the following credentials
+  - Username: AdminUser
+  - Password: P@ssword12345
+- For the OTP refer to the main.py terminal
+- Watch the gif for instructions
+  - In the video u can see me go to my email, only reason I did that is to prove that the 2FA email successfully sent
+
+[Watch: Admin Usage Tutorial](readme_files/instructional%20admin%20usage%20website%20tut.mp4)
+
+## If you wish to test the 2FA
+
+- Change the email manually in the admin_users in table in the database.db and you can change password though it will require you to go the admin_change_password.html and input the current password which is P@ssword12345
+
+## Version History
+
+- 0.3
+  - Added CSS
+  - Created Admin Blog and Blog Editor
+  - Implemented Security Features
+- 0.2
+  - Added Admin Dashboard
+- 0.1
+  - Added Admin Login, 2FA and Session Management
+  - Created layout and basic versions of all pages

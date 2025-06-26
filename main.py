@@ -10,8 +10,8 @@ from flask_csp.csp import csp_header
 import logging
 import userManagement as dbHandler
 import twofa
-import testimonials as test
-import admin 
+import testimonial_admin as admin_t
+import blog_admin as admin_b
 from flask import send_file
 from datetime import timedelta
 import methods as method
@@ -127,14 +127,14 @@ def add_testiominals():
         delete_id = request.form.get("id")
         if delete_id:
             delete = method.delete_testimonial(delete_id)
-            data = method.get_testimonials()
+            data = method.get_api_data("get_testimonials")
             return render_template("admin_testimonials.html", data=data, delete=delete)
         else:
-            form_data = test.sanitize_testimonial(request.form)
+            form_data = admin_t.sanitize_testimonial(request.form)
             success = method.add_testimonial(form_data)
-            data = method.get_testimonials()
+            data = method.get_api_data("get_testimonials")
             return render_template("admin_testimonials.html", data=data, success=success)
-    data = method.get_testimonials() # Explain why here you have to call the api again and again
+    data = method.get_api_data("get_testimonials")
     return render_template("admin_testimonials.html", data=data)
 
 @app.route("/2fa.html", methods=["POST"])
@@ -153,7 +153,7 @@ def twofa_page():
 
 @app.route("/booking.html", methods=["GET"])
 def booking():
-    data = method.get_testimonials()
+    data = method.get_api_data("get_testimonials")
     return render_template("/booking.html", data=data)
 
 @app.route("/admin_blog.html", methods=["GET", "POST"])
@@ -163,26 +163,26 @@ def admin_blog():
         if delete_id:
             print(f"Delete ID: {delete_id}")
             delete = method.delete_blog(delete_id)
-            data = method.get_blog()
+            data = method.get_api_data("get_blog")
             return render_template("admin_blog.html", data=data, delete=delete)
         else:
-            blog_data = admin.sanatize_blog(request)
+            blog_data = admin_b.sanatize_blog(request)
             print(blog_data)
             success = method.post_blog(blog_data)
-            data = method.get_blog()
+            data = method.get_api_data("get_blog")
         return render_template("/admin_blog.html", success=success, data=data)
-    data = method.get_blog()
+    data = method.get_api_data("get_blog")
     return render_template("/admin_blog.html", data=data)
 
 @app.route("/admin_about.html", methods=["GET", "POST"])
 def admin_about():
     if request.method == "POST":
-        form_data = admin.sanatize_aboutme(request)
+        form_data = admin_b.sanatize_aboutme(request)
         print(form_data)
         success = method.update_aboutme(form_data)
-        data = method.get_aboutme()
+        data = method.get_api_data("get_aboutme")
         return render_template("/admin_about.html", success=success, data=data)
-    data = method.get_aboutme()
+    data = method.get_api_data("get_aboutme")
     return render_template("/admin_about.html", data=data)
 
 @app.route("/admin_change_password.html", methods=["GET", "POST"])
@@ -219,13 +219,13 @@ def privacy():
 @app.route("/about.html", methods=["GET"])
 def about():
     data = {}
-    data = method.get_aboutme()
+    data = method.get_api_data("get_aboutme")
     return render_template("/about.html", data=data)
 
 @app.route("/blog.html", methods=["GET"])
 def blog():
     data = {}
-    data = method.get_blog()
+    data = method.get_api_data("get_blog")
     return render_template("/blog.html", data=data)
 
 @app.route("/download_logs", methods=["GET"])
