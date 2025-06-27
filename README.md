@@ -44,7 +44,7 @@ python api.py
 
 ## If you wish to test the 2FA
 
-- Change the email manually in the admin_users in table in the database.db and you can change password though it will require you to go the admin_change_password.html and input the current password which is P@ssword12345
+- Change the email manually in the admin_users in table in the database.db and you can change password though it will require you to go the admin_change_password.html and input the current password which is P@ssword12345 (email could be in spam)
 
 ## Version History
 
@@ -57,3 +57,7 @@ python api.py
 - 0.1
   - Added Admin Login, 2FA and Session Management
   - Created layout and basic versions of all pages
+
+## View the full Systems Report Template
+
+[Download: Task 4 - Systems Report Template (1).docx](<readme_files/Task%204%20-%20Systems%20Report%20Template%20(1).docx>)
