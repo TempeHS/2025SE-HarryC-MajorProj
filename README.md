@@ -36,7 +36,8 @@ python api.py
 - Use the following credentials
   - Username: AdminUser
   - Password: P@ssword12345
-- For the OTP refer to the main.py terminal
+- ## For the OTP refer to the main.py terminal
+  - ![OTP Code Example](readme_files/otp_code.png)
 - Watch the gif for instructions
   - In the video u can see me go to my email, only reason I did that is to prove that the 2FA email successfully sent
 
@@ -49,11 +50,12 @@ python api.py
 ## Version History
 
 - 0.3
-  - Added CSS
+  - Added CSS, responsive buttons
   - Created Admin Blog and Blog Editor
   - Implemented Security Features
 - 0.2
   - Added Admin Dashboard
+  - Ability to make testimonials and change about me
 - 0.1
   - Added Admin Login, 2FA and Session Management
   - Created layout and basic versions of all pages
