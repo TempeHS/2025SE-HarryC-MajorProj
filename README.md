@@ -10,6 +10,9 @@ Install all required dependencies using:
 pip install -r requirements.txt
 ```
 
+- Go to the VS Code extension marketplace and download the following
+  - ![Database examples](readme_files/sqlite.png)
+
 ## How to use the website as an enduser
 
 Use this codespace in google chrome
