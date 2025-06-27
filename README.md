@@ -46,6 +46,7 @@ python api.py
 ## If you wish to test the 2FA
 
 - Change the email manually in the admin_users in table in the database.db and you can change password though it will require you to go the admin_change_password.html and input the current password which is P@ssword12345 (email could be in spam)
+  - [Watch: Change password example.mov](readme_files/Change%20password%20example.mov)
 
 ## Version History
 
